@@ -2,39 +2,47 @@ package exercices;
 
 public class Person {
 
-    // TODO 1. Add the following private attributes :
-    // - name (String)
-    // - age (int)
-    // - wilder (boolean)
+    //Atributes
+    private String name;
+    private int age;
+    private boolean wilder;
 
+    //Constructor
+    public Person(String name, int age){
+        this.name = name;
+        this.age = age;
+    }
 
-    // TODO 2. Add a Constructor with name and age arguments (in this order)
-    // This constructor must initialize name and age attributes
+    //Methods
+    public String whoAmI(){
+        return "My name is " + this.getName() + " and I'm " + Integer.toString(this.getAge());
+    }
 
+    //Getters
+    public String getName(){
+        return this.name;
+    }
 
-    // TODO 3. Add getter method for name attribute
+    public int getAge(){
+        return this.age;
+    }
 
+    public boolean isWilder(){
+        return this.wilder;
+    }
 
-    // TODO 4. Add setter method for name attribute
+    //Setters
+    public void setName(String name){
+        this.name = name;
+    }
 
+    public void setAge(int age){
+        this.age = age;
+    }
 
-    // TODO 5. Add getter method for age attribute
-
-
-    // TODO 6. Add setter method for age attribute
-
-
-    // TODO 7. Add getter method for wilder attribute
-
-
-    // TODO 8. Add setter method for wilder attribute
-
-
-    // TODO 9. Create a method 'whoAmI' that returns "My name is {name} and I'm {age}"
-    // where you replace {name} and {age} with attributes values
-
-
-
+    public void setWilder(boolean wilder){
+        this.wilder = wilder;
+    }
 
     // Do not remove this empty constructor !
     public Person() {
